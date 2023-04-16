@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 
 * {
     margin: 0px;
@@ -14,9 +15,98 @@ header {
     color: white;
 }
 
+header h1 {
+    padding: 15px 0px 0px 10px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 40px;
+    
+}
 section {
+    padding: 2rem;
     display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 30px;
+    color: #265E70;
 }
 
+.carousel {
+    display: flex;
+    align-items: center;
+    max-width: 580px;
+    gap: 20px;
+}
 
+.cards {
+    list-style-type: none;
+    border-radius: 15px;
+    display: flex;
+    /* max-width: 540px; */
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    gap: 50px;
+    overflow: hidden;
+    
+}
 
+.cards li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(77, 188, 233, 0.75);
+    border-radius: 15px;
+    min-width: 500px;
+    min-height: 500px;
+    padding: 15px;
+}
+
+.labels {
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.cards span{
+    color: #265E70;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 3px 10px 3px 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.setas {
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+}
+
+    /* .setas img:hover{
+    
+    } */
+
+#maisInfo {
+    width: 350px;
+    height: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 47px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    margin-top: 40px;
+
+    background: #4DBCE9;
+    border-radius: 15px;
+    border: none;
+}
+
+    #maisInfo:hover {
+        font-size: 35px;
+    }
+    
