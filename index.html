@@ -22,11 +22,11 @@
         <div>
             <p style="margin-bottom: 50px;">Conheça nossas <span style="color: #4DBCE9BF; font-weight: 700;">motos</span>!</p>
             <div class="carousel">
-                <button class="setas">
+                <button id="prev" onclick="other(-1)" class="setaEsquerda">
                     <img src="assests/images/setaEsquerda.png" alt="Seta Esquerda">
                 </button>
                 <ul class="cards">
-                    <li>
+                    <li class="slide">
                         <h2> Scooter Elétrica Voltz EV1 </h2>
                         <img src="assests/images/motoScooter.png"  alt="Moto Scooter">
                         <div class="labels">
@@ -36,7 +36,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="slide">
                         <h2> Honda CB 500X </h2>
                         <img src="assests/images/motoCb500.png" alt="Moto CB500">
                         <div class="labels">
@@ -46,7 +46,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="setas">
+                <button id="next" onclick="other(+1)" class="setaDireita">
                     <img src="assests/images/setaDireita.png" alt="Seta Direita">
                 </button>
 
@@ -54,6 +54,17 @@
             <button id="maisInfo">Saiba mais</button>
         </div>
     </section>     
+    <div id="fade" class="hide" ></div>
+    <div id="modal" class="hide">
+        <div class="modalHeader">
+            <h2>Teste</h2>
+            <button id="closeModal">Fechar</button>    
+        </div>
+        <div class="modalBody">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, nulla natus tempora eos deleniti unde porro aliquam animi omnis doloribus illum, incidunt dolore voluptas hic error expedita obcaecati eligendi enim.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa veritatis ut amet, vel voluptate voluptatem accusamus cum ab hic debitis maxime est alias necessitatibus enim laudantium ducimus sequi obcaecati?</p>
+        </div>
+    </div>             
 </body>
 </html>
 

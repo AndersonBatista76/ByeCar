@@ -78,15 +78,11 @@ section {
     border-radius: 10px;
 }
 
-.setas {
+.setaDireita, .setaEsquerda {
     border: 0px;
     background-color: white;
     cursor: pointer;
 }
-
-    /* .setas img:hover{
-    
-    } */
 
 #maisInfo {
     width: 350px;
@@ -98,9 +94,8 @@ section {
     line-height: 47px;
     color: #FFFFFF;
     cursor: pointer;
-
+    opacity: 0.9;
     margin-top: 40px;
-
     background: #4DBCE9;
     border-radius: 15px;
     border: none;
@@ -108,5 +103,56 @@ section {
 
     #maisInfo:hover {
         font-size: 35px;
+        opacity: 1;
     }
-    
+
+#fade, #modal {
+    transition:  .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: 5;
+
+}
+#modal {
+    transform: translate(-50% -50%);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.modalBody {
+    margin-bottom: 1rem;
+}
+
+#modal.hide, #fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
